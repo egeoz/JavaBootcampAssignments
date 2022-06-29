@@ -9,7 +9,7 @@ public class MenuRunnable implements Runnable{
     private String name, surname, age;
 
     // Returns the utility menu as a string.
-    public static String getMenu(){
+    private static String getMenu(){
         StringBuilder output = new StringBuilder();
         output.append("\nStudent Management Utility\n");
         output.append("1 - Add new student\n");
@@ -21,7 +21,7 @@ public class MenuRunnable implements Runnable{
     }
 
     // Checks if the parameter is a valid integer.
-    public static boolean isNumeric(String age) {
+    private static boolean isNumeric(String age) {
         if (age == null) {
             return false;
         }
